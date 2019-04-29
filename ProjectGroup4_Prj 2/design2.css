@@ -1,0 +1,140 @@
+body {
+    font-family: Verdana, Arial, sans-serif;
+    background-color: white;
+}
+
+#wrapper {
+    width: 90%;
+    margin: auto;
+    color: blue;
+    background-image: url(photos/banner.jpeg);
+    height: 130px;
+}
+
+
+nav {
+    height: 30px;
+    font-size: 120%;
+    top: 105px;
+    left: 100px;
+    text-align: center;
+    margin: 30px;
+    background-color: #2E86C1;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:link {
+    color: #330000;
+}
+
+nav a:visited {
+    color: #003300;
+}
+
+nav a:hover {
+    color: #996600;
+}
+
+main {
+    width: 85%;
+    margin: 0px 10px 0px 10px;
+    padding: 1px 10px 20px 10px;
+    background-color: skyblue;
+    color: black;
+    display: block;
+    top: 50px;
+
+}
+
+aside {
+    float: right;
+    width: 20%;
+    padding: 0 2.5%;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    font-size: 70%;
+    color: #333333;
+    clear: all;
+    padding: 2%;
+
+
+}
+
+.copyright {
+    width: 45%;
+    float: left;
+
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+}
+
+coast {
+    margin: 0 0 10px 10px;
+    border: 1px solid #000000;
+    align-content: center;
+}
+
+
+
+#links {
+    float: left;
+    line-height: 70px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    @include transition(all, 0.3s);
+}
+
+#links:hover {
+    background-color: #222;
+    @include transition(all, .3s);
+}
+
+
+.face {
+    background-color: #3D5B94;
+    font-size: 1.2em;
+    width: 15%;
+}
+
+.tweet {
+    background-color: #3DACDD;
+    font-size: 1.2em;
+    width: 15%;
+}
+
+.support {
+    background-color: #6dcd9a;
+    font-size: 0.8em;
+    width: 25%;
+}
+
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: #996600;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    color: blue;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
